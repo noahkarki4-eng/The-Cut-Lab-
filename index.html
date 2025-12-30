@@ -1,390 +1,325 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>GGM - Global Gospel Mission</title>
-<style>
-  :root {
-    --c1: #669bbc;
-    --c2: #bc6c25;
-    --c3: #00b4d8;
-    --c4: #005f73;
-    --c5: #2a9d8f;
-    --c6: #1a659e;
-    --nc1: #f29559;
-    --nc2: #ffffff;
-    --nc3: #284b63;
-    --nc4: #62b6cb;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-  body { background: #f5f5f5; color: #222; }
-  header { background: var(--c6); color: #fff; padding: 20px; text-align: center; }
-  nav { display: flex; justify-content: center; gap: 20px; padding: 15px; background: var(--c4); }
-  nav a { color: #fff; text-decoration: none; font-weight: bold; }
-  .hero { height: 90vh; background: var(--c1); color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
-  .hero h1 { font-size: 48px; max-width: 900px; }
-  .hero p { font-size: 20px; margin-top: 10px; max-width: 800px; }
-  .btn { background: var(--c3); padding: 12px 24px; color: #fff; margin-top: 20px; border-radius: 6px; text-decoration: none; }
 
-  .section { padding: 60px 8%; }
-  h2 { color: var(--c4); margin-bottom: 20px; }
-  .flex { display: flex; gap: 40px; flex-wrap: wrap; }
-
-  /* Latest Updates */
-  .updates-box { width: 30%; background: #fff; padding: 20px; border-left: 5px solid var(--c2); height: 400px; overflow-y: scroll; }
-  .updates-box h3 { margin-bottom: 10px; color: var(--c2); }
-
-  /* Gallery */
-  .gallery { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 20px; }
-  .gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; }
-
-  /* Contact */
-  .contact-form { width: 100%; max-width: 500px; background: #fff; padding: 30px; border-radius: 10px; }
-  input, textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 6px; border: 1px solid #ccc; }
-  button { background: var(--c5); padding: 12px 24px; color: #fff; border: none; margin-top: 10px; border-radius: 6px; cursor: pointer; }
-
-  footer { text-align: center; padding: 20px; background: var(--c4); color: #fff; margin-top: 40px; }
-</style>
-</head>
-<body>
-
-<header>
-  <h1>GGM – Global Gospel Mission</h1>
-  <p>Equipping Youth. Proclaiming Christ. Reaching the Nations.</p>
-</header>
-
-<nav>
-  <a href="#about">About</a>
-  <a href="#mission">Mission</a>
-  <a href="#history">History</a>
-  <a href="#teachings">Teachings</a>
-  <a href="#sermons">Sermons</a>
-  <a href="#blog">Blog</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#bible">Bible</a>
-  <a href="#discord">Discord</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<div class="hero">
-  <h1>"Go therefore and make disciples of all nations" – Matthew 28:19</h1>
-  <p>A global ministry dedicated to preaching Christ, raising leaders, and reaching nations with the Gospel.</p>
-  <a class="btn" href="#contact">Join The Mission</a>
-</div>
-
-<section id="news" class="section" style="background: var(--nc1); color: #fff; padding: 15px 0;">
-  <h2 style="text-align:center; margin-bottom:10px;">Latest News</h2>
-  <div style="overflow:hidden; white-space:nowrap;">
-    <p id="news-scroll" style="display:inline-block; padding-left:100%; font-size:18px;">
-      • Gospel Outreach 2025 expanding to 3 new regions • New Youth Leadership Training launching next month • Weekly Bible Study on Romans starts Friday • Prayer and Fasting week begins Monday • GGM Media Team preparing new sermon series •
-    </p>
-  </div>
-</section>
-
-<section id="about" class="section">
-  <h2>What We Do</h2>
-  <div class="flex">
-    <div style="flex: 1; min-width: 60%;">
-      <p>We are a Christ-centered ministry focused on equipping the next generation, proclaiming Jesus boldly, and reaching the nations with the Gospel. Rooted in Scripture and led by the Holy Spirit, our mission is to raise youth leaders who live and lead for the glory of God.</p>
-    </div>
-    <div class="updates-box">
-      <h3>Latest Updates</h3>
-      <p>• July Message: Rooted in Faith, Formed in Love, Living for Eternity.</p>
-      <p>• August Word: Trust in the Lord – Jeremiah 17:7–8.</p>
-      <p>• Mission Expansion Teams Preparing for Outreach.</p>
-      <p>• Weekly Teaching Series on Philippians 3.</p>
-    </div>
-  </div>
-</section>
-
-<section id="mission" class="section">
-  <h2>Why We Do It</h2>
-  <p>Every soul matters, and every life needs the Gospel. The world is hungry for hope, and Jesus is the answer. We serve because the harvest is plentiful and laborers are few.</p>
-</section>
-
-<section id="history" class="section">
-  <h2>Our Story</h2>
-  <p>Global Gospel Mission was founded in June 2025 in Dubai by NK Noah, a servant of Christ with a calling to teach the Word and raise disciples for God's glory.</p>
-</section>
-
-<section id="gallery" class="section">
-  <h2>Image Gallery</h2>
-  <div class="gallery">
-    <img src="image.jpg" />
-    <img src="image1.jpg" />
-    <img src="image2.jpg" />
-    <img src="image3.jpg" />
-    <img src="image4.jpg" />
-    <img src="image5.jpg" />
-    <img src="image6.jpg" />
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <div class="contact-form">
-    <form action="mailto:noahkarki4@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  <p>Noah © 2025 Global Gospel Mission. All Rights Reserved.</p>
-</footer>
-
-
-<!-- Bible Verse API Section -->
-<section id="bible" class="section">
-  <h2>Daily Bible Verse</h2>
-  <div id="verse-box" style="background: var(--nc4); padding: 20px; border-radius: 10px; color: #000;"></div>
-</section>
-
-<!-- Dark/Light Mode Toggle -->
-<button id="modeToggle" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background: var(--nc3); color: #fff; border: none; border-radius: 6px; cursor: pointer;">Toggle Mode</button>
-
-<script>
-  // Bible Verse API
-  fetch('https://bible-api.com/john%203:16')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('verse-box').innerHTML = `<strong>${data.reference}</strong><br>${data.text}`;
-    });
-
-  // Dark / Light mode
-  const toggle = document.getElementById('modeToggle');
-  toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-  });
-</script>
-
-<script>
-  // News Scrolling Effect
-  const news = document.getElementById('news-scroll');
-  let x = 0;
-  function scrollNews() {
-    x--;
-    news.style.transform = `translateX(${x}px)`;
-    if (Math.abs(x) > news.scrollWidth) {
-      x = window.innerWidth;
-    }
-    requestAnimationFrame(scrollNews);
-  }
-  scrollNews();
-</script>
-
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GGM Global Gospel Mission</title>
+  <title>Talent Tailor and Textiles Trading L.L.C | Custom Tailoring Since 1988</title>
+
+  <meta name="description" content="Premium custom tailoring in Dubai since 1988. Bespoke suits, tuxedos, blazers, safari suits, and fine fabrics." />
+  <meta name="keywords" content="Tailor in Dubai, Custom Suits Dubai, Bespoke Tailoring Dubai" />
+
   <style>
-    body {
+    :root {
+      --primary: #2a9d8f;
+      --secondary: #f6bd60;
+      --accent: #e76f51;
+      --white: #ffffff;
+      --green: #06d6a0;
+      --soft: #a8dadc;
+      --dark: #1f2933;
+    }
+
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #000;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
     header {
-      background: #1a659e;
-      padding: 20px;
-      text-align: center;
-      color: white;
+      background: var(--primary);
+      color: var(--white);
+      padding: 20px 0;
     }
 
-    nav {
-      background: #005f73;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image.jpg');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-    }
-
-    .section {
-      padding: 40px;
+    .container {
+      width: 90%;
       max-width: 1200px;
       margin: auto;
     }
 
-    .gallery {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      font-size: 0.95rem;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(
+          rgba(42,157,143,0.85),
+          rgba(42,157,143,0.85)
+        ),
+        url("image.jpg") center / cover no-repeat;
+      color: var(--white);
+      padding: 110px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 26px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin: 6px;
+    }
+
+    .btn-primary {
+      background: var(--secondary);
+      color: var(--dark);
+    }
+
+    .btn-whatsapp {
+      background: var(--green);
+      color: var(--dark);
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h3 {
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    /* ABOUT */
+    .about p {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.05rem;
+    }
+
+    /* SERVICES */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: var(--soft);
+      padding: 25px;
+      border-radius: 6px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .service-card h4 {
+      margin-bottom: 10px;
+    }
+
+    /* GALLERY */
+    .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      padding: 20px;
+      gap: 20px;
     }
 
-    .gallery img {
+    .gallery-grid img {
       width: 100%;
-      height: 200px;
+      border-radius: 6px;
       object-fit: cover;
-      border-radius: 8px;
+      height: 260px;
     }
 
-    .cta {
-      background: #bc6c25;
-      color: white;
-      padding: 30px;
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .cta a {
-      background: #00b4d8;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-size: 1.2rem;
-      border-radius: 5px;
-    }
-
-    .container {
-      display: flex;
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
     }
 
-    .main-content {
-      flex: 3;
-    }
-
-    .sidebar {
-      flex: 1;
-      background: #669bbc;
-      color: white;
-      padding: 20px;
-      height: 500px;
-      overflow-y: scroll;
-      border-radius: 8px;
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: none;
+      border-radius: 6px;
     }
 
     footer {
-      background: #1a659e;
-      padding: 20px;
+      background: var(--primary);
+      color: var(--white);
+      padding: 25px 0;
       text-align: center;
-      color: white;
-      margin-top: 40px;
     }
 
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--green);
+      color: var(--dark);
+      padding: 15px 18px;
+      border-radius: 50%;
+      font-weight: bold;
     }
 
-    .contact-form button {
-      background: #2a9d8f;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>GGM GLOBAL GOSPEL MISSION</h1>
-  <p>Equipping Youth. Proclaiming Christ. Reaching the Nations.</p>
+  <div class="container">
+    <nav>
+      <h1>Talent Tailor</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#history">Church History</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#contact">Contact</a>
-</nav>
-
 <section class="hero">
-  <h1>Proclaiming Christ To The Nations</h1>
-</section>
-
-<section id="about" class="section">
-  <h2>What We Do</h2>
-  <p>We are a Christ-centered ministry dedicated to spreading the Gospel across the globe and equipping the next generation to stand firm in faith.</p>
-</section>
-
-<section class="section container">
-  <div class="main-content">
-    <h2>Church History</h2>
-    <p>Complete timeline from the early church to the present age.</p>
-  </div>
-
-  <div class="sidebar">
-    <h3>Latest Updates</h3>
-    <ul>
-      <li>New mission training starting soon.</li>
-      <li>Monthly devotional for August released.</li>
-      <li>GGM youth outreach expanding.</li>
-    </ul>
+  <div class="container">
+    <h2>Custom Tailoring Excellence Since 1988</h2>
+    <p>
+      Premium bespoke tailoring in Dubai, crafted with precision,
+      quality fabrics, and decades of trusted experience.
+    </p>
+    <a href="#contact" class="btn btn-primary">Book an Appointment</a>
+    <a href="https://wa.me/971569266275" class="btn btn-whatsapp">WhatsApp Us</a>
   </div>
 </section>
 
-<section id="gallery" class="section">
-  <h2>Image Gallery</h2>
-  <div class="gallery">
-    <img src="image.jpg" />
-    <img src="image1.jpg" />
-    <img src="image2.jpg" />
-    <img src="image3.jpg" />
-    <img src="image4.jpg" />
-    <img src="image5.jpg" />
-    <img src="image6.jpg" />
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-title">
+      <h3>About Us</h3>
+    </div>
+    <p>
+      Talent Tailor and Textiles Trading L.L.C is a trusted tailoring house in Dubai,
+      serving generations of customers since 1988. We focus on perfect fit,
+      premium fabrics, and honest craftsmanship.
+    </p>
   </div>
 </section>
 
-<section class="cta">
-  <h2>Join The Mission</h2>
-  <p>Be part of a global calling to reach the nations.</p>
-  <a href="#contact">Get Involved</a>
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <h3>Our Services</h3>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card"><h4>Suit</h4><p>Precision-cut bespoke suits.</p></div>
+      <div class="service-card"><h4>Tuxedo</h4><p>Formal tailoring with elegance.</p></div>
+      <div class="service-card"><h4>Blazer</h4><p>Classic and modern styles.</p></div>
+      <div class="service-card"><h4>Safari</h4><p>Comfortable tailored safari suits.</p></div>
+      <div class="service-card"><h4>Waist Coat</h4><p>Fine detailing and structure.</p></div>
+      <div class="service-card"><h4>Pants</h4><p>Perfect balance and comfort.</p></div>
+      <div class="service-card"><h4>Shirt</h4><p>Premium bespoke shirts.</p></div>
+      <div class="service-card"><h4>Suiting</h4><p>Wide range of suiting fabrics.</p></div>
+      <div class="service-card"><h4>Shirting</h4><p>Fine shirting materials.</p></div>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" />
-    <input type="email" placeholder="Your Email" />
-    <textarea rows="5" placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-  <p>Email: noahkarki4@gmail.com</p>
+<section id="gallery">
+  <div class="container">
+    <div class="section-title">
+      <h3>Gallery</h3>
+    </div>
+
+    <div class="gallery-grid">
+      <img src="gallery1.jpg" alt="Custom tailoring work">
+      <img src="gallery2.jpg" alt="Suit stitching detail">
+      <img src="gallery3.jpg" alt="Finished bespoke suit">
+      <img src="gallery4.jpg" alt="Fabric selection">
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h3>Contact & Location</h3>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <p><strong>Phone:</strong> 0429777100</p>
+        <p><strong>WhatsApp:</strong> 0569266275</p>
+        <p><strong>Email:</strong> info@talenttailorsdxb.ae</p>
+        <p>
+          <strong>Address:</strong><br>
+          Near Abu Baker Al Siddique Metro Station,<br>
+          Next to United Hyper Market,<br>
+          P.O. Box 64100, Dubai
+        </p>
+      </div>
+
+      <iframe
+        src="https://maps.google.com/maps?q=Abu%20Baker%20Al%20Siddique%20Metro%20Station&t=&z=15&ie=UTF8&iwloc=&output=embed">
+      </iframe>
+    </div>
+  </div>
 </section>
 
 <footer>
-  <p>© 2025 Global Gospel Mission. All Rights Reserved.</p>
+  <p>Talent Tailor and Textiles Trading L.L.C</p>
+  <p>Serving Dubai with fine tailoring since 1988</p>
 </footer>
+
+<a class="whatsapp-float" href="https://wa.me/971569266275">WA</a>
 
 </body>
 </html>
