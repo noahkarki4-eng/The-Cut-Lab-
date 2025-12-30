@@ -10,6 +10,65 @@
   <meta name="keywords" content="Tailor in Dubai, Custom Suits Dubai, Bespoke Tailoring Dubai" />
 
   <style>
+
+
+/* LATEST NEWS WIDGET */
+.news-widget {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  width: 260px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 8px 0 0 8px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.news-header {
+  background: var(--secondary);
+  color: var(--dark);
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.news-content {
+  height: 220px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.news-list {
+  animation: scrollNews 12s linear infinite;
+}
+
+.news-item {
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  font-size: 0.9rem;
+}
+
+@keyframes scrollNews {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+/* Hide on small screens */
+@media (max-width: 900px) {
+  .news-widget {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+    
     :root {
       --primary: #2a9d8f;
       --secondary: #f6bd60;
@@ -27,6 +86,24 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+
+<div class="news-widget">
+  <div class="news-header">Latest News</div>
+  <div class="news-content">
+    <div class="news-list">
+      <div class="news-item">🎉 Serving Dubai with fine tailoring since 1988</div>
+      <div class="news-item">👔 New premium suiting fabrics now available</div>
+      <div class="news-item">📍 Located near Abu Baker Al Siddique Metro</div>
+      <div class="news-item">📞 Book your fitting appointment today</div>
+      <div class="news-item">💬 WhatsApp orders now accepted</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    
     body {
       background: var(--white);
       color: var(--dark);
